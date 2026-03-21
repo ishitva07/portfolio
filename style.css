@@ -10,9 +10,16 @@ scroll-behavior:smooth;
 
 body{
 font-family:'Open Sans',sans-serif;
-background:#0f172a;
-color:white;
-overflow-x:hidden;
+background:linear-gradient(270deg,#0f172a,#1e3a8a,#06b6d4,#0f172a);
+background-size:400% 400%;
+animation:gradientMove 15s ease infinite;
+color:#e5e7eb;
+}
+
+@keyframes gradientMove{
+0%{background-position:0% 50%;}
+50%{background-position:100% 50%;}
+100%{background-position:0% 50%;}
 }
 
 /* BACKGROUND PARTICLES */
