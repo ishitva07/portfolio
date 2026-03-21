@@ -18,6 +18,8 @@ observer.observe(el);
 
 // TYPING EFFECT
 
+window.onload = function(){
+
 const text = "Ishitva Rathore";
 let i = 0;
 
@@ -36,6 +38,8 @@ setTimeout(typingEffect,80);
 }
 
 typingEffect();
+
+};
 
 
 // SCROLL PROGRESS BAR
