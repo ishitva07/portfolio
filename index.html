@@ -1,142 +1,126 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ishitva Rathore | Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ishitva Rathore | Portfolio</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
 </head>
+
 <body>
-    <!-- Subtle Background Canvas -->
-    <canvas id="bg-canvas"></canvas>
-    
-    <!-- Navbar -->
-    <nav class="navbar">
-        <div class="nav-container">
-            <div class="logo">Ishitva Rathore</div>
-            <ul class="nav-menu">
-                <li><a href="#about" class="nav-link">About</a></li>
-                <li><a href="#education" class="nav-link">Education</a></li>
-                <li><a href="#experience" class="nav-link">Experience</a></li>
-                <li><a href="#skills" class="nav-link">Skills</a></li>
-                <li><a href="#contact" class="nav-link">Contact</a></li>
-            </ul>
-            <div class="hamburger">
-                <span></span><span></span><span></span>
-            </div>
-        </div>
-    </nav>
 
-    <!-- Hero -->
-    <section class="hero">
-        <div class="hero-content">
-            <h1 class="hero-title">Ishitva Rathore</h1>
-            <div class="hero-subtitle">
-                <p>BBA in Digital Business & Entrepreneurship</p>
-                <p>IIM Bangalore • Aspiring Entrepreneur • Finance & Accounting</p>
-            </div>
-            <a href="#contact" class="cta-button">Contact Me</a>
-        </div>
-        
-        <!-- Floating Boxes (KEPT) -->
-        <div class="floating-boxes">
-            <a href="#about" class="float-box">About</a>
-            <a href="#education" class="float-box">Education</a>
-            <a href="#experience" class="float-box">Experience</a>
-            <a href="#skills" class="float-box">Skills</a>
-        </div>
-    </section>
+<!-- 🌌 BACKGROUND -->
+<div class="bg"></div>
+<div class="bg2"></div>
 
-    <!-- About -->
-    <section class="section" id="about">
-        <div class="container">
-            <h2 class="section-title">About</h2>
-            <div class="about-content">
-                <p>I am a BBA student in Digital Business & Entrepreneurship at IIM Bangalore.</p>
-                <p>I am interested in <strong style="color: #00d4ff;">finance, business strategy, and building digital businesses</strong>.</p>
-                <p>I enjoy working on ideas that solve real-world problems and create value.</p>
-                <p>I come from a science background, which helps me think logically and make better decisions.</p>
-                <p>I aim to grow as an entrepreneur and build impactful businesses in the future.</p>
-            </div>
-        </div>
-    </section>
+<!-- NAVBAR -->
+<nav class="navbar">
+  <div class="nav-container">
+    <div class="logo">Ishitva Rathore</div>
+    <ul class="nav-menu">
+      <li><a href="#about">About</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
+</nav>
 
-    <!-- Education -->
-    <section class="section alternate" id="education">
-        <div class="container">
-            <h2 class="section-title">Education</h2>
-            <div class="cards-grid">
-                <div class="card">
-                    <h3>IIM Bangalore</h3>
-                    <p>BBA in Digital Business & Entrepreneurship</p>
-                    <span class="date">2025 – 2028</span>
-                </div>
-                <div class="card">
-                    <h3>Class 12 (Science)</h3>
-                    <p>90% Aggregate</p>
-                </div>
-            </div>
-        </div>
-    </section>
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-content">
+    <h1 id="heroTitle">Ishitva Rathore</h1>
+    <p>
+      BBA in Digital Business & Entrepreneurship<br>
+      IIM Bangalore • Finance • Strategy • Entrepreneurship
+    </p>
+    <a href="#contact" class="btn">Contact Me</a>
+  </div>
+</section>
 
-    <!-- Experience -->
-    <section class="section" id="experience">
-        <div class="container">
-            <h2 class="section-title">Experience</h2>
-            <div class="cards-grid">
-                <div class="card">
-                    <h3>Event Management</h3>
-                    <p>Assisted in organizing and managing school events. Helped with planning, coordination, and execution.</p>
-                </div>
-                <div class="card">
-                    <h3>House Prefect</h3>
-                    <p>Managed a house of 100+ students. Led the house to win Overall Championship.</p>
-                </div>
-                <div class="card">
-                    <h3>Head of Organizing Committee</h3>
-                    <p>Led planning and execution of annual functions and school events.</p>
-                </div>
-                <div class="card">
-                    <h3>Leadership & Teamwork</h3>
-                    <p>Developed communication and problem-solving skills in team environments.</p>
-                </div>
-            </div>
-        </div>
-    </section>
+<!-- ABOUT -->
+<section id="about" class="section">
+  <h2>About Me</h2>
+  <p>
+    I am a BBA student at IIM Bangalore interested in finance, business strategy, 
+    and building digital businesses. I aim to create impactful ventures.
+  </p>
+</section>
 
-    <!-- Certifications -->
-    <section class="section alternate">
-        <div class="container">
-            <h2 class="section-title">Certifications</h2>
-            <div class="skills-grid">
-                <div class="skill-card">UCMAS Mastery</div>
-                <div class="skill-card">IMO Level 2 Qualifier</div>
-                <div class="skill-card">NSO Level 2 Qualifier</div>
-                <div class="skill-card">Merit Distinction</div>
-            </div>
-       </section>
+<!-- EDUCATION -->
+<section id="education" class="section">
+  <h2>Education</h2>
+  <div class="grid">
+    <div class="card">
+      <h3>IIM Bangalore</h3>
+      <p>BBA in Digital Business & Entrepreneurship (2025–2028)</p>
+    </div>
+    <div class="card">
+      <h3>Class 12</h3>
+      <p>Science Stream • 90%</p>
+    </div>
+  </div>
+</section>
 
-    <!-- Contact -->
-    <section class="section alternate" id="contact">
-        <div class="container">
-            <h2 class="section-title">Get In Touch</h2>
-            <div class="cards-grid">
-                <div class="card contact-card">
-                    <i class="fas fa-envelope"></i>
-                    <h3>Email</h3>
-                    <p>ishitva.rathore25@iimb.ac.in</p>
-                </div>
-                <div class="card contact-card">
-                    <i class="fab fa-linkedin"></i>
-                    <h3>LinkedIn</h3>
-                    <p>linkedin.com/in/ishitva-rathore-7091b1387</p>
-                </div>
-            </div>
-        </div>
-    </section>
+<!-- EXPERIENCE -->
+<section id="experience" class="section">
+  <h2>Experience</h2>
+  <div class="grid">
+    <div class="card">
+      <h3>Event Management</h3>
+      <p>Organized school events, coordinated teams, and ensured smooth execution.</p>
+    </div>
+    <div class="card">
+      <h3>House Prefect</h3>
+      <p>Managed 100+ students and led house to overall championship.</p>
+    </div>
+    <div class="card">
+      <h3>Organizing Head</h3>
+      <p>Led planning and execution of annual events and functions.</p>
+    </div>
+    <div class="card">
+      <h3>Leadership</h3>
+      <p>Strong communication, decision-making, and teamwork skills.</p>
+    </div>
+  </div>
+</section>
 
-    <script src="script.js"></script>
+<!-- CERTIFICATIONS -->
+<section class="section">
+  <h2>Certifications</h2>
+  <div class="grid">
+    <div class="card">UCMAS Mastery</div>
+    <div class="card">IMO Level 2</div>
+    <div class="card">NSO Level 2</div>
+    <div class="card">Merit Distinction</div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills" class="section">
+  <h2>Skills</h2>
+  <div class="grid">
+    <div class="card">Finance Analysis</div>
+    <div class="card">Accounting</div>
+    <div class="card">Business Strategy</div>
+    <div class="card">Leadership</div>
+    <div class="card">Problem Solving</div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="section">
+  <h2>Contact</h2>
+  <p>Email: ishitva.rathore25@iimb.ac.in</p>
+</section>
+
+<script src="script.js"></script>
+
 </body>
 </html>
