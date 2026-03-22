@@ -5,24 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ishitva Rathore | Portfolio</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <!-- Particles Canvas -->
-    <canvas id="particles"></canvas>
-    
-    <!-- Background Layers -->
-    <div class="bg-layer layer-1"></div>
-    <div class="bg-layer layer-2"></div>
-    <div class="bg-layer layer-3"></div>
+    <!-- Subtle Background Canvas -->
+    <canvas id="bg-canvas"></canvas>
     
     <!-- Navbar -->
     <nav class="navbar">
         <div class="nav-container">
-            <div class="logo">
-                <span>Ishitva</span> Rathore
-            </div>
+            <div class="logo">Ishitva Rathore</div>
             <ul class="nav-menu">
                 <li><a href="#about" class="nav-link">About</a></li>
                 <li><a href="#education" class="nav-link">Education</a></li>
@@ -31,64 +24,41 @@
                 <li><a href="#contact" class="nav-link">Contact</a></li>
             </ul>
             <div class="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
+                <span></span><span></span><span></span>
             </div>
         </div>
     </nav>
 
     <!-- Hero -->
-    <section class="hero" id="home">
+    <section class="hero">
         <div class="hero-content">
-            <div class="hero-badge">IIM Bangalore</div>
-            <h1 class="hero-title">
-                <span class="gradient-text">Ishitva</span> Rathore
-            </h1>
-            <p class="hero-subtitle">
-                BBA in Digital Business & Entrepreneurship<br>
-                Aspiring Entrepreneur • Finance & Accounting
-            </p>
-            <div class="hero-buttons">
-                <a href="#contact" class="cta-primary">Contact Me</a>
-                <a href="#experience" class="cta-secondary">View Work</a>
+            <h1 class="hero-title">Ishitva Rathore</h1>
+            <div class="hero-subtitle">
+                <p>BBA in Digital Business & Entrepreneurship</p>
+                <p>IIM Bangalore • Aspiring Entrepreneur • Finance & Accounting</p>
             </div>
+            <a href="#contact" class="cta-button">Contact Me</a>
         </div>
-        <div class="hero-stats">
-            <div class="stat-card">
-                <div class="stat-number">2025</div>
-                <div class="stat-label">IIMB Batch</div>
-            </div>
-            <div class="stat-card">
-                <div class="stat-number">90%</div>
-                <div class="stat-label">Class 12</div>
-            </div>
+        
+        <!-- Floating Boxes (KEPT) -->
+        <div class="floating-boxes">
+            <a href="#about" class="float-box">About</a>
+            <a href="#education" class="float-box">Education</a>
+            <a href="#experience" class="float-box">Experience</a>
+            <a href="#skills" class="float-box">Skills</a>
         </div>
     </section>
-
-    <!-- Quick Navigation -->
-    <div class="quick-nav">
-        <a href="#about" class="quick-link"><i class="fas fa-user"></i></a>
-        <a href="#education" class="quick-link"><i class="fas fa-graduation-cap"></i></a>
-        <a href="#experience" class="quick-link"><i class="fas fa-briefcase"></i></a>
-        <a href="#skills" class="quick-link"><i class="fas fa-chart-line"></i></a>
-    </div>
 
     <!-- About -->
     <section class="section" id="about">
         <div class="container">
-            <h2 class="section-title">About Me</h2>
-            <div class="about-grid">
-                <div class="about-text">
-                    <p>I am a BBA student in Digital Business & Entrepreneurship at IIM Bangalore.</p>
-                    <p>I am interested in <strong>finance, business strategy, and building digital businesses</strong>.</p>
-                    <p>I enjoy working on ideas that solve real-world problems and create value.</p>
-                    <p>I come from a science background, which helps me think logically and make better decisions.</p>
-                    <p>I aim to grow as an entrepreneur and build impactful businesses in the future.</p>
-                </div>
-                <div class="about-image">
-                    <div class="profile-pic"></div>
-                </div>
+            <h2 class="section-title">About</h2>
+            <div class="about-content">
+                <p>I am a BBA student in Digital Business & Entrepreneurship at IIM Bangalore.</p>
+                <p>I am interested in <strong style="color: #00d4ff;">finance, business strategy, and building digital businesses</strong>.</p>
+                <p>I enjoy working on ideas that solve real-world problems and create value.</p>
+                <p>I come from a science background, which helps me think logically and make better decisions.</p>
+                <p>I aim to grow as an entrepreneur and build impactful businesses in the future.</p>
             </div>
         </div>
     </section>
@@ -98,24 +68,14 @@
         <div class="container">
             <h2 class="section-title">Education</h2>
             <div class="cards-grid">
-                <div class="card education-card">
-                    <div class="card-header">
-                        <i class="fas fa-university"></i>
-                        <h3>IIM Bangalore</h3>
-                    </div>
-                    <div class="card-body">
-                        BBA in Digital Business & Entrepreneurship
-                        <div class="card-date">2025 – 2028</div>
-                    </div>
+                <div class="card">
+                    <h3>IIM Bangalore</h3>
+                    <p>BBA in Digital Business & Entrepreneurship</p>
+                    <span class="date">2025 – 2028</span>
                 </div>
-                <div class="card education-card">
-                    <div class="card-header">
-                        <i class="fas fa-school"></i>
-                        <h3>Class 12 (Science)</h3>
-                    </div>
-                    <div class="card-body">
-                        90% Aggregate
-                    </div>
+                <div class="card">
+                    <h3>Class 12 (Science)</h3>
+                    <p>90% Aggregate</p>
                 </div>
             </div>
         </div>
@@ -127,71 +87,36 @@
             <h2 class="section-title">Experience</h2>
             <div class="cards-grid">
                 <div class="card">
-                    <div class="card-header">
-                        <i class="fas fa-calendar-check"></i>
-                        <h3>Event Management</h3>
-                    </div>
-                    <div class="card-body">
-                        Assisted in organizing and managing school events. Helped with planning, coordination, and execution. Worked with teams to ensure smooth event flow.
-                    </div>
+                    <h3>Event Management</h3>
+                    <p>Assisted in organizing and managing school events. Helped with planning, coordination, and execution.</p>
                 </div>
                 <div class="card">
-                    <div class="card-header">
-                        <i class="fas fa-trophy"></i>
-                        <h3>House Prefect</h3>
-                    </div>
-                    <div class="card-body">
-                        Managed a house of 100+ students. Maintained discipline and coordinated activities. Led the house to win the Overall Championship.
-                    </div>
+                    <h3>House Prefect</h3>
+                    <p>Managed a house of 100+ students. Led the house to win Overall Championship.</p>
                 </div>
                 <div class="card">
-                    <div class="card-header">
-                        <i class="fas fa-users"></i>
-                        <h3>Head of Organizing Committee</h3>
-                    </div>
-                    <div class="card-body">
-                        Led planning and execution of annual functions and school events. Coordinated with students and teachers. Acted as a bridge between students and administration.
-                    </div>
+                    <h3>Head of Organizing Committee</h3>
+                    <p>Led planning and execution of annual functions and school events.</p>
                 </div>
                 <div class="card">
-                    <div class="card-header">
-                        <i class="fas fa-handshake"></i>
-                        <h3>Leadership & Teamwork</h3>
-                    </div>
-                    <div class="card-body">
-                        Worked in team environments efficiently. Took initiative in organizing responsibilities. Developed communication and problem-solving skills.
-                    </div>
+                    <h3>Leadership & Teamwork</h3>
+                    <p>Developed communication and problem-solving skills in team environments.</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Certifications -->
-    <section class="section alternate" id="certifications">
+    <section class="section alternate">
         <div class="container">
             <h2 class="section-title">Certifications</h2>
             <div class="skills-grid">
-                <div class="skill-item">UCMAS Mastery</div>
-                <div class="skill-item">IMO Level 2 Qualifier</div>
-                <div class="skill-item">NSO Level 2 Qualifier</div>
-                <div class="skill-item">Merit Distinction</div>
+                <div class="skill-card">UCMAS Mastery</div>
+                <div class="skill-card">IMO Level 2 Qualifier</div>
+                <div class="skill-card">NSO Level 2 Qualifier</div>
+                <div class="skill-card">Merit Distinction</div>
             </div>
-        </div>
-    </section>
-
-    <!-- Skills -->
-    <section class="section" id="skills">
-        <div class="container">
-            <h2 class="section-title">Skills</h2>
-            <div class="skills-grid">
-                <div class="skill-item"><i class="fas fa-coins"></i> Finance</div>
-                <div class="skill-item"><i class="fas fa-calculator"></i> Accounting</div>
-                <div class="skill-item"><i class="fas fa-strategy"></i> Strategy</div>
-                <div class="skill-item"><i class="fas fa-users"></i> Leadership</div>
-                <div class="skill-item"><i class="fas fa-chart-bar"></i> Quantitative Analysis</div>
-            </div>
-        </div>
-    </section>
+       </section>
 
     <!-- Contact -->
     <section class="section alternate" id="contact">
